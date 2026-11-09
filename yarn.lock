@@ -709,16 +709,64 @@
     "@sentry/utils" "6.7.1"
     tslib "^1.9.3"
 
-"@sentry/cli@^2.18.1":
-  version "2.18.1"
-  resolved "https://registry.yarnpkg.com/@sentry/cli/-/cli-2.18.1.tgz#c44f189a1a72a83087a297c5fcc7668f86dd4308"
-  integrity sha512-lc/dX/cvcmznWNbLzDbzxn224vwY5zLIDBe3yOO6Usg3CDgkZZ3xfjN4AIUZwkiTEPIOELodrOfdoMxqpXyYDw==
+"@sentry/cli-darwin@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli-darwin/-/cli-darwin-3.8.2.tgz#02b9915b2e95c3805d9b60cf0fbba1b8955d4fe5"
+  integrity sha512-S9xIhtpPk5uU0J0dMLz5VCtlBn+OHjG7En8HkZNGYsleNACQOwcG5wcfAnGuq+7x643KrEOubtd1VPtGfrBHsQ==
+
+"@sentry/cli-linux-arm64@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli-linux-arm64/-/cli-linux-arm64-3.8.2.tgz#18056c4989a8ca69f263b255eb0e28c5fa42cd71"
+  integrity sha512-sWKkGTSOqRmGW8d2Q6ir1gBEkvfXWNbDxcf/dF0MJt8q9p594k+04GOm5mZ/VAePKGzs9W8fXE1xfmZ/UNCLcQ==
+
+"@sentry/cli-linux-arm@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli-linux-arm/-/cli-linux-arm-3.8.2.tgz#ba7655828f950d2daf74038b183747dbb35dbfec"
+  integrity sha512-maj9TXsnyWqNKs+UTHc+/gpsvXPVlCbheH+QHaBx8FD9u0B56REVDfxKUSCzeC9eTGDf0eKAFxbxWiMXKG4B5Q==
+
+"@sentry/cli-linux-i686@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli-linux-i686/-/cli-linux-i686-3.8.2.tgz#23c5068c25975b5bfd25e36c5b782066c79becc9"
+  integrity sha512-6aOKjTWGl5XEYCOOha4GO3aq5C7ISmYB8QECec8mFLWx0L3QoXdKtaNQoLUYslsSN0jEmFeOgA0U27Tp5OEBww==
+
+"@sentry/cli-linux-x64@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli-linux-x64/-/cli-linux-x64-3.8.2.tgz#6a4a75083e2e08de521351927837f721c0b63e99"
+  integrity sha512-icx2NoqaxuE4H5khIoRCB/MDX76/kKbDZFvJe/UYloGp9aucxi6c7mk8oDxFvskMFqLfbprQ6RzKH7iILmODQg==
+
+"@sentry/cli-win32-arm64@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli-win32-arm64/-/cli-win32-arm64-3.8.2.tgz#2ede13b1fdec7f67d6e65735f11b6e559bfbc8ce"
+  integrity sha512-lSzj1ywih1madjyMrTHSjJKPhvErozSsSrG7QF6yIt7dMLYX4Qh9X3puVReh1YB5mOPCX8MJPtur67YJmR1S+w==
+
+"@sentry/cli-win32-i686@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli-win32-i686/-/cli-win32-i686-3.8.2.tgz#84c32fe4a1ee6e03850de4e5734b32d488ccaa4a"
+  integrity sha512-k4dPGNNliNY46G/4hSeJygHlMoyMoL292IO+YP3MasBqyqPEy9hz6Py3FjUVW/Ckso52eoAVtGgb6DntFBjIWA==
+
+"@sentry/cli-win32-x64@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli-win32-x64/-/cli-win32-x64-3.8.2.tgz#75948ecd8a7dee9c7422bec3e225e210088728f3"
+  integrity sha512-IBX5W2M3Zckpg3zOXfnNoayWTKhVlZN/b7ifO7dRArkOsNRzVa2lNB5M7L28O0/ZYu/8V+SnzCoHVGN9bxRdwg==
+
+"@sentry/cli@^3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@sentry/cli/-/cli-3.8.2.tgz#f334cf2096c5d097c55e6770670b66042a16e9bf"
+  integrity sha512-JbB/UTBPRQREkI6CaxD8Cs0ppNc3YT8CROgRV7WeaqPn7mZOAgTYqtcxiW/OF7OquOIHUd0u6gu2vL+g5ITdHQ==
   dependencies:
-    https-proxy-agent "^5.0.0"
-    node-fetch "^2.6.7"
     progress "^2.0.3"
     proxy-from-env "^1.1.0"
+    undici "^6.22.0"
     which "^2.0.2"
+  optionalDependencies:
+    "@sentry/cli-darwin" "3.8.2"
+    "@sentry/cli-linux-arm" "3.8.2"
+    "@sentry/cli-linux-arm64" "3.8.2"
+    "@sentry/cli-linux-i686" "3.8.2"
+    "@sentry/cli-linux-x64" "3.8.2"
+    "@sentry/cli-win32-arm64" "3.8.2"
+    "@sentry/cli-win32-i686" "3.8.2"
+    "@sentry/cli-win32-x64" "3.8.2"
 
 "@sentry/core@6.7.1":
   version "6.7.1"
@@ -6261,7 +6309,7 @@ no-case@^3.0.4:
     lower-case "^2.0.2"
     tslib "^2.0.3"
 
-node-abi@4, node-abi@^3.45.0, node-abi@^4, node-abi@^4.2.0:
+node-abi@^3.45.0, node-abi@^4, node-abi@^4.2.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-4.14.0.tgz#7846b36a732f1afa221be3ca0e6248448bc111ef"
   integrity sha512-E4n91K4Nk1Rch2KzD+edU2bfZTP4W42GypAUDXU4vu1A+4u9PvUNDkGI0dXbsy8ZeF3WGj0SD/uHxnXD/sW+3w==
@@ -6300,13 +6348,6 @@ node-fetch-npm@^2.0.1:
     encoding "^0.1.11"
     json-parse-helpfulerror "^1.0.3"
     safe-buffer "^5.0.1"
-
-node-fetch@^2.6.7:
-  version "2.6.7"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
-  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
-  dependencies:
-    whatwg-url "^5.0.0"
 
 node-gyp-build@^4.2.1:
   version "4.2.3"
@@ -9062,11 +9103,6 @@ tough-cookie@~2.5.0:
     psl "^1.1.28"
     punycode "^2.1.1"
 
-tr46@~0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
-  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
-
 trim-newlines@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/trim-newlines/-/trim-newlines-1.0.0.tgz"
@@ -9257,6 +9293,11 @@ undici-types@~6.21.0:
   version "6.21.0"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.21.0.tgz#691d00af3909be93a7faa13be61b3a5b50ef12cb"
   integrity sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==
+
+undici@^6.22.0:
+  version "6.29.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.29.1.tgz#a3317c5df0236e0633727d9a7bd4f7ed195d8575"
+  integrity sha512-EvRlUt/QqAEvXdQeRMYUfwOQsfzpDztykrG2owGEE/rBOBoYv9uF39ZzsNDh4lTFHhTr2XOZjKkYgueD12ZmGA==
 
 unique-filename@^1.1.0, unique-filename@~1.1.0:
   version "1.1.0"
@@ -9484,11 +9525,6 @@ wcwidth@^1.0.0, wcwidth@^1.0.1:
   dependencies:
     defaults "^1.0.3"
 
-webidl-conversions@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
-  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
-
 webpack-bundle-analyzer@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/webpack-bundle-analyzer/-/webpack-bundle-analyzer-4.7.0.tgz#33c1c485a7fcae8627c547b5c3328b46de733c66"
@@ -9565,14 +9601,6 @@ webpack@^5.86.0:
     terser-webpack-plugin "^5.3.7"
     watchpack "^2.4.0"
     webpack-sources "^3.2.3"
-
-whatwg-url@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
-  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
-  dependencies:
-    tr46 "~0.0.3"
-    webidl-conversions "^3.0.0"
 
 which-boxed-primitive@^1.0.1, which-boxed-primitive@^1.0.2:
   version "1.0.2"
